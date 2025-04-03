@@ -1,0 +1,1415 @@
+@font-face {
+    font-family: __angellist_2fd5e4;
+    src: url(/_next/static/media/80a97ceb34ae2212-s.p.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 400 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __angellist_2fd5e4;
+    src: url(/_next/static/media/a0201618f20485a3-s.p.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 400 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: __angellist_Fallback_2fd5e4;
+    src: local("Arial");
+    ascent-override:92.70%;descent-override:28.00%;line-gap-override:0.00%;size-adjust:103.56%}
+
+.__className_2fd5e4 {
+    font-family: __angellist_2fd5e4,__angellist_Fallback_2fd5e4
+}
+
+.__variable_2fd5e4 {
+    --font-angellist: "__angellist_2fd5e4","__angellist_Fallback_2fd5e4"
+}
+
+@font-face {
+    font-family: __angellistDisplay_099fdc;
+    src: url(/_next/static/media/6848028509a94fc0-s.p.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __angellistDisplay_Fallback_099fdc;
+    src: local("Arial");
+    ascent-override:96.01%;descent-override:29.00%;line-gap-override:0.00%;size-adjust:99.99%}
+
+.__className_099fdc {
+    font-family: __angellistDisplay_099fdc,__angellistDisplay_Fallback_099fdc;
+    font-weight: 400;
+    font-style: normal
+}
+
+.__variable_099fdc {
+    --font-angellist-display: "__angellistDisplay_099fdc","__angellistDisplay_Fallback_099fdc"
+}
+
+:root {
+    --header-height: 4rem;
+    --gradient-100: linear-gradient(98.78deg,#7f7833 6.69%,#898ee5 40.89%,#898ee5 83.02%,#867b36 100.19%);
+    --colors-accent-gradient-2: linear-gradient(195.85deg,#6258ff -121.25%,#e06ab2 -69.08%,#fb8569 -36.55%,#ffb1b1 12.07%,#cdcbff 59.26%,#7e6f4a 126.83%,#32607f 172.94%,#fde8b5 277.03%);
+    --colors-accent-gradient-1: linear-gradient(186deg,#fdaaa5 -10%,#cdcbff 50%,#fdaaa5 110%);
+    --color-ink-0: 0,0,0;
+    --color-ink-1: 0,29,33;
+    --color-ink-2: 0,43,49;
+    --color-ink-3: 0,54,61;
+    --color-ink-4: 178,191,193;
+    --color-ink-5: 204,210,211;
+    --color-white-0: 255,255,255;
+    --color-white-1: 249,249,247;
+    --color-white-2: 243,244,242;
+    --color-white-3: 235,236,235;
+    --color-white-4: 132,136,136;
+    --color-white-5: 104,112,111;
+    --color-purple-0: 62,58,255;
+    --color-purple-1: 89,85,255;
+    --color-purple-2: 189,187,255;
+    --color-purple-3: 222,221,255;
+    --color-mauve-0: 137,78,109;
+    --color-mauve-1: 204,148,176;
+    --color-mauve-2: 219,179,200;
+    --color-coral-0: 150,80,63;
+    --color-coral-1: 251,133,105;
+    --color-coral-2: 254,214,207;
+    --color-gold-0: 138,116,74;
+    --color-gold-1: 189,169,132;
+    --color-gold-2: 233,226,213;
+    --color-lime-0: 231,250,62;
+    --color-lime-1: 237,251,144;
+    --color-lime-2: 244,252,192;
+    --color-light-green-0: 104,205,124;
+    --color-light-green-1: 205,238,211;
+    --color-light-green-2: 224,254,230;
+    --color-green-0: 36,92,78;
+    --color-green-1: 181,210,203;
+    --color-green-2: 225,240,236;
+    --color-blue-0: 50,96,127;
+    --color-blue-1: 81,155,205;
+    --color-blue-2: 206,221,236
+}
+
+@media (min-width: 960px) {
+    :root {
+        --header-height:5rem
+    }
+}
+
+[data-theme=light],[data-theme=white] {
+    --surface-bg: var(--color-white-0);
+    --surface-bg-muted: var(--color-white-2);
+    --surface-text-primary: var(--color-ink-1);
+    --surface-text-muted: var(--color-white-5);
+    --surface-text-accent: var(--color-gold-0);
+    --surface-text-section-label: var(--color-gold-0);
+    --surface-text-hover: var(--color-purple-1);
+    --surface-text-weight: Regular;
+    --surface-accent-mauve: var(--color-mauve-1);
+    --surface-accent-purple: var(--color-purple-2);
+    --surface-accent-coral: var(--color-coral-1);
+    --surface-accent-gold: var(--color-gold-1);
+    --surface-accent-lime: var(--color-lime-1);
+    --surface-accent-light-green: var(--color-light-green-1);
+    --surface-accent-green: var(--color-green-1);
+    --surface-accent-blue: var(--color-blue-1);
+    --surface-stroke-primary: rgba(0,43,49,.1);
+    --surface-stroke-secondary: rgba(0,43,49,.4);
+    --card-primary: var(--color-white-2);
+    --card-primary-hover: var(--color-white-3);
+    --card-primary-active: var(--color-white-1);
+    --cta-primary-bg: var(--color-ink-1);
+    --cta-primary-text: var(--color-white-1);
+    --cta-primary-hover-bg: var(--color-purple-2);
+    --cta-primary-hover-text: var(--color-ink-1);
+    --cta-primary-active-bg: var(--color-ink-3);
+    --cta-primary-active-text: var(--color-white-1);
+    --cta-secondary-bg: var(--color-white-3);
+    --cta-secondary-text: var(--color-ink-1);
+    --cta-secondary-hover-bg: var(--color-purple-2);
+    --cta-secondary-hover-text: var(--color-ink-1);
+    --cta-secondary-active-bg: var(--color-ink-3);
+    --cta-secondary-active-text: var(--color-white-1);
+    --cta-text-link-bg: var(--color-ink-1);
+    --cta-text-link-text: var(--color-white-1);
+    --cta-text-link-hover-bg: var(--color-purple-2);
+    --cta-text-link-hover-text: var(--color-ink-1);
+    --cta-text-link-active-bg: var(--color-ink-3);
+    --cta-text-link-active-text: var(--color-white-1);
+    --tag-bg: var(--color-white-3);
+    --tag-hover-bg: var(--color-purple-2);
+    --tag-hover-text: var(--color-purple-0);
+    --tag-text: var(--color-ink-1);
+    --table-header-bg: var(--color-ink-2);
+    --table-rows-row-fill: rgba(var(--color-white-1),1);
+    --table-rows-row-transparent: hsla(60,14%,97%,0);
+    --table-header-text: var(--color-white-1);
+    --testimonial-card: var(--color-purple-2);
+    --testimonial-text: var(--color-ink-1);
+    --testimonial-stroke: rgba(0,43,49,.2);
+    --tabs-bg: var(--color-white-2);
+    --tabs-hover-bg: var(--color-white-3);
+    --tabs-active-text: var(--color-white-1);
+    --tabs-active-bg: var(--color-ink-2);
+    --tabs-text: var(--color-ink-1);
+    --stepper: var(--color-white-3);
+    --stepper-active: var(--color-white-4)
+}
+
+[data-theme=dark],[data-theme=ink] {
+    --surface-bg: var(--color-ink-1);
+    --surface-bg-muted: var(--color-ink-0);
+    --surface-text-primary: var(--color-white-1);
+    --surface-text-muted: var(--color-ink-4);
+    --surface-text-accent: var(--color-purple-2);
+    --surface-text-section-label: var(--color-purple-2);
+    --surface-text-hover: var(--color-purple-2);
+    --surface-text-weight: Regular;
+    --surface-accent-mauve: var(--color-mauve-1);
+    --surface-accent-purple: var(--color-purple-2);
+    --surface-accent-coral: var(--color-coral-1);
+    --surface-accent-gold: var(--color-gold-1);
+    --surface-accent-lime: var(--color-lime-1);
+    --surface-accent-light-green: var(--color-light-green-1);
+    --surface-accent-green: var(--color-green-1);
+    --surface-accent-blue: var(--color-blue-1);
+    --surface-stroke-primary: hsla(0,0%,100%,.2);
+    --surface-stroke-secondary: hsla(0,0%,100%,.4);
+    --card-primary: var(--color-ink-2);
+    --card-primary-hover: var(--color-ink-3);
+    --card-primary-active: 51,85,90;
+    --cta-primary-bg: var(--color-white-1);
+    --cta-primary-text: var(--color-ink-1);
+    --cta-primary-hover-bg: var(--color-purple-2);
+    --cta-primary-hover-text: var(--color-ink-1);
+    --cta-primary-active-bg: var(--color-white-3);
+    --cta-primary-active-text: var(--color-ink-1);
+    --cta-secondary-bg: var(--color-ink-3);
+    --cta-secondary-text: var(--color-white-1);
+    --cta-secondary-hover-bg: var(--color-purple-2);
+    --cta-secondary-hover-text: var(--color-ink-1);
+    --cta-secondary-active-bg: var(--color-white-3);
+    --cta-secondary-active-text: var(--color-ink-1);
+    --cta-text-link-bg: var(--color-white-1);
+    --cta-text-link-text: var(--color-ink-1);
+    --cta-text-link-hover-bg: var(--color-purple-2);
+    --cta-text-link-hover-text: var(--color-ink-1);
+    --cta-text-link-active-bg: var(--color-white-3);
+    --cta-text-link-active-text: var(--color-ink-1);
+    --tag-bg: var(--color-ink-2);
+    --tag-text: var(--color-white-1);
+    --tag-hover-bg: var(--color-purple-2);
+    --tag-hover-text: var(--color-purple-0);
+    --table-header-bg: var(--color-ink-3);
+    --table-rows-row-fill: rgba(0,43,49,.3);
+    --table-rows-row-transparent: rgba(0,29,33,0);
+    --table-header-text: var(--color-white-1);
+    --testimonial-card: var(--color-purple-2);
+    --testimonial-text: var(--color-ink-1);
+    --testimonial-stroke: rgba(0,43,49,.2);
+    --tabs-bg: var(--color-ink-2);
+    --tabs-text: var(--color-white-1);
+    --tabs-hover-bg: var(--color-ink-3);
+    --tabs-active-text: var(--color-ink-1);
+    --tabs-active-bg: var(--color-white-1);
+    --stepper: var(--color-ink-3);
+    --stepper-active: var(--color-ink-5)
+}
+
+[data-theme=gray] {
+    --surface-bg: var(--color-white-1);
+    --surface-bg-muted: var(--color-white-3);
+    --surface-text-primary: var(--color-ink-1);
+    --surface-text-muted: var(--color-white-5);
+    --surface-text-accent: var(--color-gold-0);
+    --surface-text-section-label: var(--color-gold-0);
+    --surface-text-hover: var(--color-purple-1);
+    --surface-text-weight: Regular;
+    --surface-accent-mauve: var(--color-mauve-1);
+    --surface-accent-purple: var(--color-purple-2);
+    --surface-accent-coral: var(--color-coral-1);
+    --surface-accent-gold: var(--color-gold-1);
+    --surface-accent-lime: var(--color-lime-1);
+    --surface-accent-light-green: var(--color-light-green-1);
+    --surface-accent-green: var(--color-green-1);
+    --surface-accent-blue: var(--color-blue-1);
+    --surface-stroke-primary: rgba(0,43,49,.2);
+    --surface-stroke-secondary: rgba(0,43,49,.4);
+    --card-primary: var(--color-white-2);
+    --card-primary-hover: var(--color-white-3);
+    --card-primary-active: var(--color-white-1);
+    --cta-primary-bg: var(--color-ink-1);
+    --cta-primary-text: var(--color-white-1);
+    --cta-primary-hover-bg: var(--color-purple-2);
+    --cta-primary-hover-text: var(--color-ink-1);
+    --cta-primary-active-bg: var(--color-ink-3);
+    --cta-primary-active-text: var(--color-white-1);
+    --cta-secondary-bg: var(--color-white-3);
+    --cta-secondary-text: var(--color-ink-1);
+    --cta-secondary-hover-bg: var(--color-purple-2);
+    --cta-secondary-hover-text: var(--color-ink-1);
+    --cta-secondary-active-bg: var(--color-ink-3);
+    --cta-secondary-active-text: var(--color-white-1);
+    --cta-text-link-bg: var(--color-ink-1);
+    --cta-text-link-text: var(--color-white-1);
+    --cta-text-link-hover-bg: var(--color-purple-2);
+    --cta-text-link-hover-text: var(--color-ink-1);
+    --cta-text-link-active-bg: var(--color-ink-3);
+    --cta-text-link-active-text: var(--color-white-1);
+    --tag-bg: var(--color-white-3);
+    --tag-hover-bg: var(--color-purple-2);
+    --tag-hover-text: var(--color-purple-0);
+    --tag-text: var(--color-ink-1);
+    --table-header-bg: var(--color-ink-2);
+    --table-rows-row-fill: rgba(var(--color-white-2),1);
+    --table-rows-row-transparent: hsla(0,0%,100%,0);
+    --table-header-text: var(--color-white-1);
+    --testimonial-card: var(--color-purple-2);
+    --testimonial-text: var(--color-ink-1);
+    --testimonial-stroke: rgba(0,43,49,.2);
+    --tabs-bg: var(--color-white-2);
+    --tabs-hover-bg: var(--color-white-3);
+    --tabs-active-text: var(--color-white-1);
+    --tabs-active-bg: var(--color-ink-2);
+    --tabs-text: var(--color-ink-1);
+    --stepper: var(--color-white-3);
+    --stepper-active: var(--color-white-4)
+}
+
+.mesh-gradient-1 {
+    background-color: #8b744b;
+    background-image: radial-gradient(at 100% 3%,#131b20 0,transparent 50%),radial-gradient(at 53% 1%,#8b744b 0,transparent 50%),radial-gradient(at 53% 67%,#8b744b 0,transparent 50%),radial-gradient(at 98% 65%,#8b654b 0,transparent 50%),radial-gradient(at 58% 35%,#7c5b4b 0,transparent 50%),radial-gradient(at 0 0,#403b30 0,transparent 50%),radial-gradient(at 13% 47%,#8b654b 0,transparent 50%),radial-gradient(at 100% 19%,#141b1f 0,transparent 50%),radial-gradient(at 99% 43%,rgba(25,35,41,.63) 0,transparent 50%)
+}
+
+.mesh-gradient-2 {
+    background-color: #002d33;
+    background-image: radial-gradient(at 6% 61%,#00363d 0,transparent 50%),radial-gradient(at 94% 90%,#bebdff 0,transparent 50%),radial-gradient(at 43% 70%,#8b744b 0,transparent 50%),radial-gradient(at 60% 64%,#519bcd 0,transparent 50%),radial-gradient(at 90% 14%,#519bcd 0,transparent 50%),radial-gradient(at 69% 34%,#538fa2 0,transparent 50%),radial-gradient(at 2% 96%,#1d5967 0,transparent 50%),radial-gradient(at 39% 38%,#1d5967 0,transparent 50%),radial-gradient(at 5% 90%,#00363d 0,transparent 50%),radial-gradient(at 9% 26%,#00363d 0,transparent 50%)
+}
+
+.mesh-gradient-3 {
+    background-color: #99f;
+    background-image: radial-gradient(at 52% 94%,#2f495b 0,transparent 50%),radial-gradient(at 16% 34%,#2f495b 0,transparent 50%),radial-gradient(at 56% 20%,#9b8836 0,transparent 50%),radial-gradient(at 65% 0,#887b4e 0,transparent 50%),radial-gradient(at 84% 7%,#897c4d 0,transparent 50%),radial-gradient(at 12% 74%,#2b4532 0,transparent 50%),radial-gradient(at 37% 59%,#2f495b 0,transparent 50%),radial-gradient(at 4% 6%,#2f495b 0,transparent 50%),radial-gradient(at 2% 96%,#2b4532 0,transparent 50%),radial-gradient(at 66% 58%,#bebdff 0,transparent 50%)
+}
+
+.mesh-gradient-4 {
+    background-color: #002d33;
+    background-image: radial-gradient(at 1% 97%,#002d33 0,transparent 50%),radial-gradient(at 98% 58%,#002d33 0,transparent 50%),radial-gradient(at 16% 12%,#69745d 0,transparent 50%),radial-gradient(at 68% 32%,#b89493 0,transparent 50%),radial-gradient(at 37% 55%,#69745d 0,transparent 50%),radial-gradient(at 37% 9%,#445f53 0,transparent 50%),radial-gradient(at 44% 33%,#445f53 0,transparent 50%),radial-gradient(at 64% 5%,#b89493 0,transparent 50%)
+}
+
+.mesh-gradient-5 {
+    background-color: #1b75b1;
+    background-image: radial-gradient(at 100% 52%,hsla(11,94%,70%,.9) 0,transparent 50%),radial-gradient(at 99% 100%,#fa856b 0,transparent 50%),radial-gradient(at 73% 68%,#519bcd 0,transparent 50%),radial-gradient(at 0 68%,#002d33 0,transparent 50%),radial-gradient(at 82% 49%,#519bcd 0,transparent 50%),radial-gradient(at 0 35%,rgba(0,45,51,.58) 0,transparent 50%),radial-gradient(at 4% 98%,#002d33 0,transparent 50%),radial-gradient(at 9% 3%,#326181 0,transparent 50%)
+}
+
+@keyframes mesh-gradient-1-keyframes {
+    0% {
+        --s-start-0: 0%;
+        --s-end-0: 26.463783724434414%;
+        --y-0: 13%;
+        --c-0: #152128;
+        --x-0: -1%;
+        --y-1: 4%;
+        --s-start-1: 4.570383912248629%;
+        --s-end-1: 46.9225822044247%;
+        --c-1: #131e25;
+        --x-1: 97%;
+        --y-2: 29%;
+        --x-2: 48%;
+        --s-start-2: 9.607184652436587%;
+        --s-end-2: 35.11218049713637%;
+        --c-2: #856f47;
+        --y-3: 45%;
+        --x-3: 12%;
+        --c-3: #886549;
+        --s-start-3: 9.607184652436587%;
+        --s-end-3: 25.680334115595006%;
+        --x-4: 91%;
+        --c-4: #886549;
+        --y-4: 93%;
+        --s-start-4: 9.607184652436587%;
+        --s-end-4: 47.77963519052788%;
+        --x-5: 38%;
+        --y-5: 22%;
+        --s-start-5: 9.607184652436587%;
+        --s-end-5: 58.81825217294083%;
+        --c-5: #886549
+    }
+
+    to {
+        --s-start-0: 0%;
+        --s-end-0: 54.375292289471666%;
+        --y-0: 13%;
+        --c-0: #152128;
+        --x-0: -1%;
+        --y-1: 36%;
+        --s-start-1: 12.75087279157621%;
+        --s-end-1: 58.44429844606947%;
+        --c-1: #131e25;
+        --x-1: 94%;
+        --y-2: 69%;
+        --x-2: 96%;
+        --s-start-2: 9.607184652436587%;
+        --s-end-2: 48.858759404100496%;
+        --c-2: #856f47;
+        --y-3: 98%;
+        --x-3: 53%;
+        --c-3: #886549;
+        --s-start-3: 13.798328462422873%;
+        --s-end-3: 40.26110996058044%;
+        --x-4: 4%;
+        --c-4: #886549;
+        --y-4: 85%;
+        --s-start-4: 9.607184652436587%;
+        --s-end-4: 47.77963519052788%;
+        --x-5: 34%;
+        --y-5: 101%;
+        --s-start-5: 9.607184652436587%;
+        --s-end-5: 58.81825217294083%;
+        --c-5: #886549
+    }
+}
+
+@property --s-start-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0
+}
+
+@property --s-end-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 26.463783724434414%
+}
+
+@property --y-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 13%
+}
+
+@property --c-0 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #152128
+}
+
+@property --x-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: -1%
+}
+
+@property --y-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 4%
+}
+
+@property --s-start-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 4.570383912248629%
+}
+
+@property --s-end-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 46.9225822044247%
+}
+
+@property --c-1 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #131e25
+}
+
+@property --x-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 97%
+}
+
+@property --y-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 29%
+}
+
+@property --s-start-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 9.607184652436587%
+}
+
+@property --s-end-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 35.11218049713637%
+}
+
+@property --y-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 45%
+}
+
+@property --x-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 12%
+}
+
+@property --c-3 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #886549
+}
+
+@property --s-end-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 25.680334115595006%
+}
+
+@property --x-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 91%
+}
+
+@property --c-4 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #886549
+}
+
+@property --y-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 93%
+}
+
+@property --s-start-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 9.607184652436587%
+}
+
+@property --s-end-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 47.77963519052788%
+}
+
+@property --x-5 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 38%
+}
+
+@property --y-5 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 22%
+}
+
+@property --s-start-5 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 9.607184652436587%
+}
+
+@property --s-end-5 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 58.81825217294083%
+}
+
+@property --c-5 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #886549
+}
+
+.mesh-gradient-1-animated {
+    --y-0: 13%;
+    --c-0: #152128;
+    --x-0: -1%;
+    --y-1: 4%;
+    --c-1: #131e25;
+    --x-1: 97%;
+    --y-2: 29%;
+    --x-2: 48%;
+    --c-2: #856f47;
+    --y-3: 45%;
+    --x-3: 12%;
+    --c-3: #886549;
+    --x-4: 91%;
+    --c-4: #886549;
+    --y-4: 93%;
+    --x-5: 38%;
+    --y-5: 22%;
+    --c-5: #886549;
+    background-color: #887249;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 2200 2200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),radial-gradient(circle at var(--x-0) var(--y-0),var(--c-0) var(--s-start-0),transparent var(--s-end-0)),radial-gradient(circle at var(--x-1) var(--y-1),var(--c-1) var(--s-start-1),transparent var(--s-end-1)),radial-gradient(circle at var(--x-2) var(--y-2),var(--c-2) var(--s-start-2),transparent var(--s-end-2)),radial-gradient(circle at var(--x-3) var(--y-3),var(--c-3) var(--s-start-3),transparent var(--s-end-3)),radial-gradient(circle at var(--x-4) var(--y-4),var(--c-4) var(--s-start-4),transparent var(--s-end-4)),radial-gradient(circle at var(--x-5) var(--y-5),var(--c-5) var(--s-start-5),transparent var(--s-end-5));
+    animation: mesh-gradient-1-keyframes 10s linear infinite alternate;
+    background-blend-mode: overlay,normal,normal,normal,normal,normal,normal
+}
+
+@keyframes mesh-gradient-2-keyframes {
+    0% {
+        --x-0: 96%;
+        --y-0: 95%;
+        --c-0: #bab8ff;
+        --s-start-0: 9.099243699928666%;
+        --s-end-0: 48.808810025584386%;
+        --c-1: #5592a5;
+        --s-start-1: 4.091653027823241%;
+        --s-end-1: 43.27634860723967%;
+        --y-1: 96%;
+        --x-1: 7%;
+        --x-2: 11%;
+        --y-2: 42%;
+        --c-2: #001b1f;
+        --s-start-2: 10.290843607751125%;
+        --s-end-2: 48.808810025584386%;
+        --x-3: 48%;
+        --s-start-3: 4.468828236460163%;
+        --s-end-3: 30.09669769260316%;
+        --c-3: #856f47;
+        --y-3: 64%;
+        --s-start-4: 4.389815627743634%;
+        --s-end-4: 31.935435736357277%;
+        --y-4: 56%;
+        --x-4: 52%;
+        --c-4: #856f47;
+        --x-5: 68%;
+        --y-5: 47%;
+        --s-start-5: 4.468828236460163%;
+        --s-end-5: 40.49461412195683%;
+        --c-5: #5592a5
+    }
+
+    to {
+        --x-0: 88%;
+        --y-0: 55%;
+        --c-0: #bab8ff;
+        --s-start-0: 9.607184652436587%;
+        --s-end-0: 48.858759404100496%;
+        --c-1: #5592a5;
+        --s-start-1: 9.607184652436587%;
+        --s-end-1: 40.57837398547783%;
+        --y-1: 61%;
+        --x-1: 41%;
+        --x-2: 61%;
+        --y-2: 10%;
+        --c-2: #001b1f;
+        --s-start-2: 9.607184652436587%;
+        --s-end-2: 54.79887062984285%;
+        --x-3: 68%;
+        --s-start-3: 9.607184652436587%;
+        --s-end-3: 36.97411691399391%;
+        --c-3: #bab8ff;
+        --y-3: 83%;
+        --s-start-4: 5.8725591296161666%;
+        --s-end-4: 36.97411691399391%;
+        --y-4: 54%;
+        --x-4: 22%;
+        --c-4: #856f47;
+        --x-5: 98%;
+        --y-5: 34%;
+        --s-start-5: 9.607184652436587%;
+        --s-end-5: 33.00634925455196%;
+        --c-5: #317181
+    }
+}
+
+@property --s-start-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 4.091653027823241%
+}
+
+@property --s-end-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 43.27634860723967%
+}
+
+@property --x-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 7%
+}
+
+@property --x-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 11%
+}
+
+@property --y-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 42%
+}
+
+@property --c-2 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #001b1f
+}
+
+@property --s-start-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 10.290843607751125%
+}
+
+@property --s-end-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 48.808810025584386%
+}
+
+@property --x-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 48%
+}
+
+@property --s-start-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 4.468828236460163%
+}
+
+@property --s-end-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 30.09669769260316%
+}
+
+@property --y-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 64%
+}
+
+@property --s-start-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 4.389815627743634%
+}
+
+@property --s-end-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 31.935435736357277%
+}
+
+@property --y-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 56%
+}
+
+@property --x-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 52%
+}
+
+@property --c-4 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #856f47
+}
+
+@property --x-5 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 68%
+}
+
+@property --y-5 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 47%
+}
+
+@property --s-start-5 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 4.468828236460163%
+}
+
+@property --s-end-5 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 40.49461412195683%
+}
+
+@property --c-5 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #5592a5
+}
+
+.mesh-gradient-2-animated {
+    --x-0: 96%;
+    --y-0: 95%;
+    --c-0: #bab8ff;
+    --c-1: #5592a5;
+    --y-1: 96%;
+    --x-1: 7%;
+    --x-2: 11%;
+    --y-2: 42%;
+    --c-2: #001b1f;
+    --x-3: 48%;
+    --c-3: #856f47;
+    --y-3: 64%;
+    --y-4: 56%;
+    --x-4: 52%;
+    --c-4: #856f47;
+    --x-5: 68%;
+    --y-5: 47%;
+    --c-5: #5592a5;
+    background-color: #001b1f;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 2200 2200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),radial-gradient(circle at var(--x-0) var(--y-0),var(--c-0) var(--s-start-0),transparent var(--s-end-0)),radial-gradient(circle at var(--x-1) var(--y-1),var(--c-1) var(--s-start-1),transparent var(--s-end-1)),radial-gradient(circle at var(--x-2) var(--y-2),var(--c-2) var(--s-start-2),transparent var(--s-end-2)),radial-gradient(circle at var(--x-3) var(--y-3),var(--c-3) var(--s-start-3),transparent var(--s-end-3)),radial-gradient(circle at var(--x-4) var(--y-4),var(--c-4) var(--s-start-4),transparent var(--s-end-4)),radial-gradient(circle at var(--x-5) var(--y-5),var(--c-5) var(--s-start-5),transparent var(--s-end-5));
+    animation: mesh-gradient-2-keyframes 10s linear infinite alternate;
+    background-blend-mode: overlay,normal,normal,normal,normal,normal,normal
+}
+
+@keyframes mesh-gradient-3-keyframes {
+    0% {
+        --c-0: #2c4431;
+        --y-0: 95%;
+        --s-start-0: 11.233076274761304%;
+        --s-end-0: 48.917760458821476%;
+        --x-0: 12%;
+        --y-1: 89%;
+        --x-1: 59%;
+        --c-1: #334c6c;
+        --s-start-1: 4.468828236460163%;
+        --s-end-1: 45.936928445147885%;
+        --x-2: 98%;
+        --c-2: #bab8ff;
+        --s-start-2: 9.099243699928666%;
+        --s-end-2: 43.20400317747202%;
+        --y-2: 97%;
+        --s-start-3: 8.34456194441396%;
+        --s-end-3: 45.21029724710546%;
+        --c-3: #856f47;
+        --y-3: 24%;
+        --x-3: 58%
+    }
+
+    to {
+        --c-0: #2c4431;
+        --y-0: 42%;
+        --s-start-0: 9.316270890206596%;
+        --s-end-0: 47.27321650879335%;
+        --x-0: 11%;
+        --y-1: 16%;
+        --x-1: 17%;
+        --c-1: #334c6c;
+        --s-start-1: 9.607184652436587%;
+        --s-end-1: 48.858759404100496%;
+        --x-2: 97%;
+        --c-2: #bab8ff;
+        --s-start-2: 4.389815627743634%;
+        --s-end-2: 31.884569283636964%;
+        --y-2: 59%;
+        --s-start-3: 5.8725591296161666%;
+        --s-end-3: 43.030939197624015%;
+        --c-3: #8a7d42;
+        --y-3: 8%;
+        --x-3: 92%
+    }
+}
+
+@property --c-0 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #2c4431
+}
+
+@property --s-start-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 11.233076274761304%
+}
+
+@property --s-end-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 48.917760458821476%
+}
+
+@property --x-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 12%
+}
+
+@property --y-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 89%
+}
+
+@property --x-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 59%
+}
+
+@property --c-1 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #334c6c
+}
+
+@property --s-end-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 45.936928445147885%
+}
+
+@property --x-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 98%
+}
+
+@property --c-2 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #bab8ff
+}
+
+@property --s-start-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 9.099243699928666%
+}
+
+@property --s-end-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 43.20400317747202%
+}
+
+@property --y-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 97%
+}
+
+@property --s-start-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 8.34456194441396%
+}
+
+@property --s-end-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 45.21029724710546%
+}
+
+@property --y-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 24%
+}
+
+@property --x-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 58%
+}
+
+.mesh-gradient-3-animated {
+    --c-0: #2c4431;
+    --y-0: 95%;
+    --x-0: 12%;
+    --y-1: 89%;
+    --x-1: 59%;
+    --c-1: #334c6c;
+    --x-2: 98%;
+    --c-2: #bab8ff;
+    --y-2: 97%;
+    --c-3: #856f47;
+    --y-3: 24%;
+    --x-3: 58%;
+    background-color: #01272d;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 2200 2200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),radial-gradient(circle at var(--x-0) var(--y-0),var(--c-0) var(--s-start-0),transparent var(--s-end-0)),radial-gradient(circle at var(--x-1) var(--y-1),var(--c-1) var(--s-start-1),transparent var(--s-end-1)),radial-gradient(circle at var(--x-2) var(--y-2),var(--c-2) var(--s-start-2),transparent var(--s-end-2)),radial-gradient(circle at var(--x-3) var(--y-3),var(--c-3) var(--s-start-3),transparent var(--s-end-3));
+    animation: mesh-gradient-3-keyframes 15s linear infinite alternate;
+    background-blend-mode: overlay,normal,normal,normal,normal
+}
+
+@keyframes mesh-gradient-4-keyframes {
+    0% {
+        --y-0: 3%;
+        --s-start-0: 9.607184652436587%;
+        --s-end-0: 46.553805035598664%;
+        --c-0: #69735e;
+        --x-0: 2%;
+        --s-start-1: 9.607184652436587%;
+        --s-end-1: 46.553805035598664%;
+        --y-1: 41%;
+        --c-1: #425c51;
+        --x-1: 20%;
+        --x-2: 42%;
+        --y-2: 27%;
+        --c-2: #af8f8e;
+        --s-start-2: 4.389815627743634%;
+        --s-end-2: 27.076429519452372%;
+        --c-3: #425c51;
+        --y-3: 9%;
+        --x-3: 62%;
+        --s-start-3: 9.607184652436587%;
+        --s-end-3: 46.553805035598664%;
+        --s-start-4: 4.468860388430093%;
+        --s-end-4: 28.726764092851464%;
+        --x-4: 96%;
+        --y-4: 95%;
+        --c-4: #04373e
+    }
+
+    to {
+        --y-0: 35%;
+        --s-start-0: 9.607184652436587%;
+        --s-end-0: 43.12105913304571%;
+        --c-0: #69735e;
+        --x-0: 31%;
+        --s-start-1: 9.607184652436587%;
+        --s-end-1: 48.858759404100496%;
+        --y-1: 69%;
+        --c-1: #425c51;
+        --x-1: 5%;
+        --x-2: 68%;
+        --y-2: 0%;
+        --c-2: #af8f8e;
+        --s-start-2: 9.607184652436587%;
+        --s-end-2: 38.99126559584888%;
+        --c-3: #425c51;
+        --y-3: 63%;
+        --x-3: 49%;
+        --s-start-3: 9.607184652436587%;
+        --s-end-3: 48.858759404100496%;
+        --s-start-4: 9.607184652436587%;
+        --s-end-4: 48.858759404100496%;
+        --x-4: 42%;
+        --y-4: 90%;
+        --c-4: #01272d
+    }
+}
+
+@property --y-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 3%
+}
+
+@property --s-start-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 9.607184652436587%
+}
+
+@property --s-end-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 46.553805035598664%
+}
+
+@property --c-0 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #69735e
+}
+
+@property --x-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 2%
+}
+
+@property --s-start-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 9.607184652436587%
+}
+
+@property --s-end-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 46.553805035598664%
+}
+
+@property --y-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 41%
+}
+
+@property --c-1 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #425c51
+}
+
+@property --x-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 20%
+}
+
+@property --x-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 42%
+}
+
+@property --y-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 27%
+}
+
+@property --c-2 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #af8f8e
+}
+
+@property --s-start-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 4.389815627743634%
+}
+
+@property --s-end-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 27.076429519452372%
+}
+
+@property --c-3 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #425c51
+}
+
+@property --y-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 9%
+}
+
+@property --x-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 62%
+}
+
+@property --s-start-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 9.607184652436587%
+}
+
+@property --s-end-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 46.553805035598664%
+}
+
+@property --s-start-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 4.468860388430093%
+}
+
+@property --s-end-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 28.726764092851464%
+}
+
+@property --x-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 96%
+}
+
+@property --y-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 95%
+}
+
+@property --c-4 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #04373e
+}
+
+.mesh-gradient-4-animated {
+    --y-0: 3%;
+    --c-0: #69735e;
+    --x-0: 2%;
+    --y-1: 41%;
+    --c-1: #425c51;
+    --x-1: 20%;
+    --x-2: 42%;
+    --y-2: 27%;
+    --c-2: #af8f8e;
+    --c-3: #425c51;
+    --y-3: 9%;
+    --x-3: 62%;
+    --x-4: 96%;
+    --y-4: 95%;
+    --c-4: #04373e;
+    background-color: #01272d;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 2200 2200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),radial-gradient(circle at var(--x-0) var(--y-0),var(--c-0) var(--s-start-0),transparent var(--s-end-0)),radial-gradient(circle at var(--x-1) var(--y-1),var(--c-1) var(--s-start-1),transparent var(--s-end-1)),radial-gradient(circle at var(--x-2) var(--y-2),var(--c-2) var(--s-start-2),transparent var(--s-end-2)),radial-gradient(circle at var(--x-3) var(--y-3),var(--c-3) var(--s-start-3),transparent var(--s-end-3)),radial-gradient(circle at var(--x-4) var(--y-4),var(--c-4) var(--s-start-4),transparent var(--s-end-4));
+    animation: mesh-gradient-4-keyframes 15s linear infinite alternate-reverse;
+    background-blend-mode: overlay,normal,normal,normal,normal,normal
+}
+
+@keyframes mesh-gradient-5-keyframes {
+    0% {
+        --x-0: 96%;
+        --y-0: 95%;
+        --c-0: #bab8ff;
+        --s-start-0: 9.099243699928666%;
+        --s-end-0: 48.808810025584386%;
+        --x-1: 9%;
+        --y-1: 96%;
+        --c-1: #5592a5;
+        --s-start-1: 4.468828236460163%;
+        --s-end-1: 46.547070162457466%;
+        --x-2: 48%;
+        --y-2: 64%;
+        --c-2: #856f47;
+        --s-start-2: 4.468828236460163%;
+        --s-end-2: 30.09669769260316%;
+        --x-3: 46%;
+        --y-3: 56%;
+        --c-3: #856f47;
+        --s-start-3: 4.389815627743634%;
+        --s-end-3: 31.935435736357277%;
+        --x-4: 61%;
+        --y-4: 31%;
+        --c-4: #5592a5;
+        --s-start-4: 4.468828236460163%;
+        --s-end-4: 44.12502679330827%
+    }
+
+    to {
+        --x-0: 88%;
+        --y-0: 55%;
+        --c-0: #bab8ff;
+        --s-start-0: 9.607184652436587%;
+        --s-end-0: 48.858759404100496%;
+        --x-1: 38%;
+        --y-1: 77%;
+        --c-1: #5592a5;
+        --s-start-1: 9.607184652436587%;
+        --s-end-1: 43.594010591716284%;
+        --x-2: 68%;
+        --y-2: 83%;
+        --c-2: #bab8ff;
+        --s-start-2: 9.607184652436587%;
+        --s-end-2: 36.97411691399391%;
+        --x-3: 28%;
+        --y-3: 49%;
+        --c-3: #856f47;
+        --s-start-3: 5.8725591296161666%;
+        --s-end-3: 36.97411691399391%;
+        --x-4: 98%;
+        --y-4: 5%;
+        --c-4: #317181;
+        --s-start-4: 9.607184652436587%;
+        --s-end-4: 48.858759404100496%
+    }
+}
+
+@property --x-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 96%
+}
+
+@property --y-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 95%
+}
+
+@property --c-0 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #bab8ff
+}
+
+@property --s-start-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 9.099243699928666%
+}
+
+@property --s-end-0 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 48.808810025584386%
+}
+
+@property --x-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 9%
+}
+
+@property --y-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 96%
+}
+
+@property --c-1 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #5592a5
+}
+
+@property --s-start-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 4.468828236460163%
+}
+
+@property --s-end-1 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 46.547070162457466%
+}
+
+@property --x-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 48%
+}
+
+@property --y-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 64%
+}
+
+@property --c-2 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #856f47
+}
+
+@property --s-start-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 4.468828236460163%
+}
+
+@property --s-end-2 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 30.09669769260316%
+}
+
+@property --x-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 46%
+}
+
+@property --y-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 56%
+}
+
+@property --c-3 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #856f47
+}
+
+@property --s-start-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 4.389815627743634%
+}
+
+@property --s-end-3 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 31.935435736357277%
+}
+
+@property --x-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 61%
+}
+
+@property --y-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 31%
+}
+
+@property --c-4 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #5592a5
+}
+
+@property --s-start-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 4.468828236460163%
+}
+
+@property --s-end-4 {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 44.12502679330827%
+}
+
+.mesh-gradient-5-animated {
+    --x-0: 96%;
+    --y-0: 95%;
+    --c-0: #bab8ff;
+    --x-1: 9%;
+    --y-1: 96%;
+    --c-1: #5592a5;
+    --x-2: 48%;
+    --y-2: 64%;
+    --c-2: #856f47;
+    --x-3: 46%;
+    --y-3: 56%;
+    --c-3: #856f47;
+    --x-4: 61%;
+    --y-4: 31%;
+    --c-4: #5592a5;
+    background-color: #01272d;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 2200 2200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),radial-gradient(circle at var(--x-0) var(--y-0),var(--c-0) var(--s-start-0),transparent var(--s-end-0)),radial-gradient(circle at var(--x-1) var(--y-1),var(--c-1) var(--s-start-1),transparent var(--s-end-1)),radial-gradient(circle at var(--x-2) var(--y-2),var(--c-2) var(--s-start-2),transparent var(--s-end-2)),radial-gradient(circle at var(--x-3) var(--y-3),var(--c-3) var(--s-start-3),transparent var(--s-end-3)),radial-gradient(circle at var(--x-4) var(--y-4),var(--c-4) var(--s-start-4),transparent var(--s-end-4));
+    animation: mesh-gradient-5-keyframes 15s linear infinite alternate;
+    background-blend-mode: overlay,normal,normal,normal,normal,normal
+}
